@@ -1,0 +1,533 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /* border: red solid 1px; */
+}
+button {
+  white-space: nowrap;
+}
+body {
+  font-family: monospace, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #9c9c9c;
+  line-height: 24px;
+  font-size: 14px;
+  
+}
+.container {
+    max-width: 897px;
+    margin: auto;
+}
+.section_py {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+a {
+    text-decoration: none;
+    color: white
+}
+
+.tag {
+    padding: 12px 16px;
+    border-radius: 60px;
+    font-weight: 700;
+    /* border: 1px solid #9c9c9c; */
+}
+#index,
+#case_studies,
+#recent_works {
+  background-color: white;
+}
+
+#testimonials,
+#get_in_touch {
+  background-color: #080808;
+}
+
+#case_studies,
+#testimonials,
+#recent_works {
+  margin: auto;
+}
+
+    /* index page section */
+header {
+  max-width: 1110px;
+  background-color: #212121;
+  margin: auto;
+  padding-top: 24px;
+  padding-bottom: 28px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.nav {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  color: white;
+  font-size: 14px;
+}
+
+.profile_photo img {
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.bio_container {
+  min-height: 525px;
+  margin-top: 56px;
+}
+
+.profile_details h1 {
+  color: black;
+  font-size: 30px;
+}
+
+.profile-photo {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.profile_details p {
+    margin-bottom: 50px;
+    color: #2C0909;
+}
+.btn_primary {
+  background-color: #3f8e00;
+  border: 1px solid #62BA1B;
+  box-shadow: 0px 8px 30px 0px rgb(63, 142, 0, .5);
+  
+  border-radius: 4px;
+  color: white;
+  font-weight: 700;
+}
+
+.btn_lg {
+  padding: 20px 64px;
+  font-size: 16px;
+}
+.btn_md {
+  padding: 16px 24px;
+  font-size: 14px;
+}
+.btn_md_2 {
+  padding: 12px 24px;
+  font-size: 14px;
+}
+
+.bio_container {
+  display: flex;
+  padding-top: 50px;
+  gap: 100px;
+  align-items: center;
+}
+
+.footer {
+  background-color: #21251d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 20px 64px;
+}
+
+.footer img {
+  height: 20px;
+}
+
+#paycheck {
+  height: 12px;
+}
+
+/* case studies */
+.case_studies p {
+  max-width: 570px;
+  margin: auto;
+}
+
+article.case_studies h1 {
+  color: #9c9c9c;
+}
+
+#case_studies .case_studies h2 {
+  color: black;
+}
+
+#case_studies h3 {
+  color: black;
+}
+
+article.case_studies h2 {
+  color: #9c9c9c;
+}
+
+.section_one .tag {
+  background-color: #FFF6E9;
+  color: #FFA217;
+}
+.section_two .tag {
+  background-color: #d0e6ff;
+  color: #000AFF;
+}
+.section_three .tag {
+  background-color: #e0fff8;
+  color: #2AB090;
+}
+
+.case_studies p{
+    margin-bottom: 36px;
+}
+
+article.case_studies {
+  text-align: center;
+}
+
+.container_one {
+  display: flex;
+  margin: 50px auto;
+  column-gap: 50px;
+}
+.container_one img {
+  width: 445px;
+  height: 300px;
+  border-radius: 2%;
+}
+
+.container_two {
+  display: flex;
+  margin: 50px auto;
+  column-gap: 50px;
+}
+.container_two img {
+  width: 445px;
+  height: 300px;
+  border-radius: 2%;
+}
+
+.container_three {
+  display: flex;
+  margin: 50px auto;
+  column-gap: 50px;
+}
+.container_three img {
+  width: 445px;
+  height: 300px;
+  border-radius: 2%;
+}
+
+.container_one button {
+  background-color: #FFA217;
+  border: 1px solid #FFA217;
+  box-shadow: 0px 8px 30px 0px rgb(255, 162, 23, .1);
+}
+.container_two button {
+  background-color: #000aff;
+  border: 1px solid #000AFF;
+  box-shadow: 0px 8px 30px 0px rgb(0, 10, 255, .1);
+}
+.container_three button {
+  background-color: #2ab090;
+  border: 1px solid #2ab090;
+  box-shadow: 0px 8px 30px 0px rgb(42, 176, 144, .1);
+}
+/* 
+button.fintech_one {
+  background-color: white;
+  border: 1px;
+  box-shadow: 2px 2px lightgray;
+  padding: 5px 15px;
+  border-radius: 15px;
+  color: orange;
+  font-weight: 700;
+  font-size: 11px;
+  margin-top: 20px;
+  margin-left: auto;
+}
+button.fintech_two {
+  background-color: orange;
+  border: 1px;
+  box-shadow: 2px 2px lightgray;
+  padding: 10px 50px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+button.edtech_one {
+  background-color: white;
+  border: 1px;
+  box-shadow: 2px 2px lightgray;
+  padding: 5px 15px;
+  border-radius: 15px;
+  color: blue;
+  font-weight: 700;
+  font-size: 11px;
+  margin-top: 20px;
+  margin-left: auto;
+}
+button.edtech_two {
+  background-color: blue;
+  border: 1px;
+  box-shadow: 2px 2px lightgray;
+  padding: 10px 50px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+button.pharma_one {
+  background-color: white;
+  border: 1px;
+  box-shadow: 2px 2px lightgray;
+  padding: 5px 15px;
+  border-radius: 15px;
+  color: green;
+  font-weight: 700;
+  font-size: 11px;
+  margin-top: 20px;
+  margin-left: auto;
+}
+button.pharma_two {
+  background-color: green;
+  border: 1px;
+  box-shadow: 2px 2px lightgray;
+  padding: 10px 50px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-left: auto;
+} */
+
+/* Testimonials page */
+
+#testimonials {
+  padding: 30px;
+  max-width: 897px;
+}
+
+article.testimonials {
+  text-align: center;
+}
+
+#testimonials .testimonials p {
+  max-width: 570px;
+  margin: auto;
+}
+.testimonials_container h2,
+.testimonials h2 {
+  color: white;
+  text-align: center;
+}
+
+.testimonials_container h3,
+.testimonials h3 {
+  color: white;
+  text-align: center;
+}
+
+article.testimonials_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 60px;
+  row-gap: 62px;
+}
+
+ .quote {
+  font-family: 'Poppins', sans-serif;
+  font-size: 44px;
+  margin-top: -24px;
+  width: fit-content;
+}
+
+fieldset {
+  border: 1px solid linear-gradient(90deg, #FFA217 0%, #FFA217 100%);
+}
+/* Child items */
+fieldset {
+  flex: 45%;
+  padding: 20px;
+  border-radius: 5px;
+  /* border: 1px solid  red; */
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(90deg, #9C9C9C 0%, red 40%, #000000 90%) 1;
+
+}
+
+fieldset div {
+  display: flex;
+  gap: 50px;
+}
+
+/* recent works section */
+
+#recent_works {
+  padding: 30px;
+  max-width: 897px;
+}
+
+article.recent_works {
+  max-width: 1109px;
+  text-align: center;
+}
+
+#recent_works .recent_works h2 {
+  color: black;
+}
+#recent_works .recent_works p {
+  max-width: 570px;
+  margin: auto;
+}
+
+#recent_works h3 {
+  color: black;
+  font-size: 24px;
+}
+
+/* button.recent_works_btn {
+  background-color: green;
+  border: 1px;
+  box-shadow: 2px 2px lightgray;
+  padding: 10px 50px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-left: auto;
+} */
+
+.recent_works_container {
+  margin-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.carousel-btn-left-btn {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: #9c9c9c solid 1px;
+  color: #9c9c9c;
+  font-size: large;
+}
+
+.carousel-btn-right-btn {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: #9c9c9c solid 1px;
+  color: #9c9c9c;
+  font-size: large;
+}
+
+/* get in touch section  */
+
+#get_in_touch {
+  padding: 30px;
+}
+
+/* button.getintouch {
+  background-color: green;
+  border: 1px;
+  box-shadow: 2px 2px lightgray;
+  padding: 10px 35px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-left: auto;
+} */
+
+#get_in_touch .get_in_touch {
+  text-align: center;
+}
+
+#get_in_touch .get_in_touch h2 {
+  color: white;
+  font-size: 34px;
+  font-weight: 800;
+}
+#get_in_touch .get_in_touch p {
+  max-width: 570px;
+  margin: auto;
+  font-size: 20px;
+}
+
+#form {
+  padding: 20px;
+  max-width: 350px;
+  margin: auto;
+}
+
+#form input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+#form button {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#copyright {
+  text-align: center;
+}
+
+label {
+  color: white;
+  font-weight: 600;
+}
+
+::placeholder {
+  color: #757575;
+  font-size: 12px;
+}
+
+/* footer copyright */
+
+#copyright a {
+  color: black;
+}
