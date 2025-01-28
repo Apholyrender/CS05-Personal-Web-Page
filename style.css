@@ -432,3 +432,178 @@ label {
 #copyright a {
   color: black;
 }
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 12px;
+    line-height: 20px;
+    background-color: lightgreen;
+  }
+
+  /* Container adjustments */
+  .container {
+    max-width: 100%;
+    padding: 0 16px;
+  }
+
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: black;
+    color: white;
+    padding: 16px;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    position: absolute; /* Overlay menu */
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: black; /* Add background color */
+    color: white; /* Ensure text is visible */
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Menu toggle button */
+.menu-toggle {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 16px;
+}
+
+/* Show navigation when active */
+.nav.active {
+  display: flex;
+}
+
+  nav a {
+    font-size: 12px;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  /* Bio section adjustments */
+  .bio_container {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 24px;
+    padding-bottom: 0px;
+
+  }
+
+  .profile_details h1 {
+    font-size: 24px;
+  }
+
+  .profile_details p {
+    font-size: 14px;
+  }
+
+  .profile_photo img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* Case studies adjustments */
+  .container_one {
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+  .container_two {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .container_three {
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+
+  .container_one img, .container_two img, .container_three img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Testimonials adjustments */
+  /* .testimonials_container {
+    flex-direction: column;
+    gap: 24px;
+  } */
+
+  fieldset {
+    width: 100%;
+  }
+
+  /* Recent works adjustments */
+  .recent_works_container {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .recent_works_container div {
+    text-align: center;
+
+  }
+
+  .carousel-btn-left-btn, .carousel-btn-right-btn {
+    display: none;
+  }
+ 
+
+  /* Form adjustments */
+  #form {
+    padding: 16px;
+  }
+
+  form label, form input, form textarea, form button {
+    width: 100%;
+    font-size: 12px;
+  }
+  .get_in_touch p {
+    width: 75%;
+    font-size: 8px;
+  }
+
+  input, textarea {
+    padding: 10px;
+  }
+
+  button {
+    padding: 12px;
+  }
+
+  /* Footer adjustments */
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .footer img {
+    height: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav {
+    display: flex; /* Show nav items */
+    position: static; /* Reset position */
+    flex-direction: row;
+    gap: 16px;
+    padding: 0;
+  }
+
+  .menu-toggle {
+    display: none; /* Hide the button on larger screens */
+  }
+}
