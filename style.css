@@ -455,6 +455,7 @@ label {
     background-color: black;
     color: white;
     padding: 16px;
+    border-radius: 0;
   }
 
   .nav {
